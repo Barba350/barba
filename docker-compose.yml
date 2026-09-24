@@ -23,7 +23,7 @@ services:
       DB_USER: root
       DB_PASS: root123
     ports:
-      - "8090:80"
+      - "8091:80"
     depends_on:
       - db
     networks:
