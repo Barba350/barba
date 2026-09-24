@@ -23,7 +23,7 @@ services:
       DB_USER: root
       DB_PASS: root123
     ports:
-      - "8080:80"
+      - "8090:80"
     depends_on:
       - db
     networks:
@@ -33,7 +33,7 @@ services:
     build: ./frontend
     container_name: barba_frontend
     ports:
-      - "8088:80"
+      - "8004:80"
     depends_on:
       - backend
     networks:
